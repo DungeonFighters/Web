@@ -11,7 +11,7 @@ body{
   height: 3000px;
 }
 
-#paperBgImg{
+.paperBgImg{
   background-image: url('images/paper.png');
   background-repeat: no-repeat;
   background-position-x: center;
@@ -19,14 +19,14 @@ body{
   height : 500px;
 }
 
-#flagImg{
+.flagImg{
   background-repeat: no-repeat;
   background-position-x: center;
   background-size:contain;
   height : 150px;
 }
 
-#ImgChars{
+.imgChars{
   background-repeat: no-repeat;
   background-position-x: center;
   background-size:contain;
