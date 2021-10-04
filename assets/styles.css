@@ -1,0 +1,46 @@
+body{
+  background-color: black !important;
+}
+
+
+#bodyBgImg {
+  background-image: url('images/background.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size:contain;
+  height: 3000px;
+}
+
+#paperBgImg{
+  background-image: url('images/paper.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size:contain;
+  height : 500px;
+}
+
+#flagImg{
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size:contain;
+  height : 150px;
+}
+
+#ImgChars{
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size:contain;
+  height : 300px;
+}
+
+
+
+#dividerImg{
+  display: inline-block;
+  background-image: url('images/divider.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  height : 78px;
+  width: 100%;
+}
