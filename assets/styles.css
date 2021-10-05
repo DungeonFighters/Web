@@ -8,6 +8,10 @@ body{
 }
 
 @font-face {
+  font-family: bodyFont;
+  src: url('font/AL_Nevrada.otf');
+}
+@font-face {
   font-family: subtitleFont;
   src: url('font/EnchantedLand.otf');
 }
@@ -37,6 +41,11 @@ h1{
   color:#D3C59D;
 }
 
+h5{
+  color:#000000;
+}
+
+
 header{
   top:7.5%;
   position:absolute;
@@ -48,7 +57,6 @@ header{
   width: 100%;
   margin: 0 auto;
 }
-
 
 .videoOverlayContent{
   position:absolute;
@@ -80,7 +88,7 @@ header{
 }
 
 #bodyBgImg {
-  font-family: subtitleFont;
+  font-family: bodyFont;
   text-align:justify;
   background-image: url('images/background.png');
   background-repeat: no-repeat;
@@ -114,9 +122,11 @@ header{
 
 
 #dividerImg{
-  object-fit:fill;
+  display:inline-block;
   background-image: url('images/divider.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   height: 78px;
+  width: 100%;
 }
