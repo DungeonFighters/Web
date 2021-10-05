@@ -8,19 +8,79 @@ body{
 }
 
 @font-face {
-  font-family: bodyFont;
+  font-family: subtitleFont;
   src: url('font/EnchantedLand.otf');
 }
 
 .display-1::first-letter{
-  color:red;
+  color:#D16B66;
 }
+
+a.nav-link{
+    font-family: subtitleFont;
+    margin: 0 auto;
+}
+
+h1.title::first-letter{
+  color:#D16B66;
+}
+
+h1.title{
+  font-family: titleFont;
+}
+
+h2{
+  color:#D3C59D;
+}
+
 h1{
-  color:yellow;
+  color:#D3C59D;
+}
+
+header{
+  top:7.5%;
+  position:absolute;
+  object-fit:cover;
+  background-image: url('images/banner-head.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.videoOverlayContent{
+  position:absolute;
+  top:30%;
+  left:42%;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  width: 960px;
+  height: 480px;
+  object-fit:cover;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
 }
 
 #bodyBgImg {
-  font-family: bodyFont;
+  font-family: subtitleFont;
   text-align:justify;
   background-image: url('images/background.png');
   background-repeat: no-repeat;
@@ -54,11 +114,9 @@ h1{
 
 
 #dividerImg{
-  display: inline-block;
+  object-fit:fill;
   background-image: url('images/divider.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size:contain;
-  height : 78px;
-  width: 100%;
+  height: 78px;
 }
