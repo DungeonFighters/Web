@@ -9,14 +9,18 @@ body{
 
 @font-face {
   font-family: bodyFont;
+  src: url('font/AL_Nevrada.otf');
+}
+@font-face {
+  font-family: subtitleFont;
   src: url('font/EnchantedLand.otf');
 }
 
 .display-1::first-letter{
-  color:red;
+  color:#D16B66;
 }
 h1{
-  color:yellow;
+  color:#D3C59D;
 }
 
 #bodyBgImg {
