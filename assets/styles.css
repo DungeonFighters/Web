@@ -2,8 +2,26 @@ body{
   background-color: black !important;
 }
 
+@font-face {
+  font-family: titleFont;
+  src: url('font/TheCenturion.otf');
+}
+
+@font-face {
+  font-family: bodyFont;
+  src: url('font/EnchantedLand.otf');
+}
+
+.display-1::first-letter{
+  color:red;
+}
+h1{
+  color:yellow;
+}
 
 #bodyBgImg {
+  font-family: bodyFont;
+  text-align:justify;
   background-image: url('images/background.png');
   background-repeat: no-repeat;
   background-position-x: center;
