@@ -12,13 +12,14 @@
 </head>
 <body>
   <div>
-    <div class="container">
+    <div class="container" style="position:relative; height:720px;">
       <video autoplay muted loop>
-        <source src="https://css-tricks-post-videos.s3.us-east-1.amazonaws.com/blurry-trees.mov">
+        <source src="assets/videos/background-video-site.mp4">
         </video>
-          <div id="headerBanner" class="row" style="text-align: center">
+        <div id="header">
+          <div id="headerBanner" class="row">
             <div class="col-6">
-                <div id="headerTitle" class="pe-2">
+                <div id="headerTitle" class="pe-4 pt-2">
                   <a href="#" class="nav-link">
                   <h1 class="title display-3 me-4 mt-4">Dungeon</h1>
                   <h1 class="title2 display-3 me-4">Fighters</h1>
@@ -27,7 +28,7 @@
             </div>
 
             <div class="col-6">
-              <ul class="nav nav-pills">
+              <ul id="menuList" class="nav nav-pills">
                 <li class="nav-item"><a href="#" class="nav-link"><h1>The Game</h1></a></li>
                 <li class="nav-item"><a href="#" class="nav-link"><h1>About</h1></a></li>
                 <li class="nav-item"><a href="#" class="nav-link"><h1>Contact Us</h1></a></li>
@@ -35,16 +36,18 @@
             </div>
             <!--iframe width="853" height="480" src="https://www.youtube.com/embed/pX-UymX0gXg" frameborder="0" allowfullscreen=""></iframe-->
           </div>
-        <div class="row" style="text-align: center">
-          <div class="col-12" style="position:relative;top:-12.5em">
-            <img src="assets/images/button-trailer.png" id="myBtn" onclick="myFunction()">
-            <img src="assets/images/divider-content.png" alt="divider" style="position:relative;">
-            <h1 style="font-family: subtitleFont">Watch the trailer</h1>
+        <div class="row pt-5">
+          <div class="col mt-5" style="text-align:center">
+            <img class="trailerInterface" src="assets/images/button-trailer.png" id="myBtn" onclick="myFunction()" style="width: 15%">
+            <br>
+            <img class="trailerInterface" src="assets/images/divider-content.png" alt="divider" style="width: 40%">
+            <h1 class="trailerInterface display-2" style="font-family: subtitleFont">Watch the trailer</h1>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container">
+      <div class="container" style="position:relative">
         <img id="dividerImg" src="assets/images/divider.png" alt="divider" style="">
       </div>
 

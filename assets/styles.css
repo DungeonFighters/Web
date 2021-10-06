@@ -57,28 +57,50 @@ h5{
   color:#000000;
 }
 
+#header{
+  z-index: 1;
+}
+
+.trailerInterface{
+  position:relative;
+}
+
 #headerTitle{
   position:relative;
   background-image: url('images/banner-head-logo.png');
   background-repeat: no-repeat;
   background-size:contain;
   height: 412px;
-  width: 60%;
+  width: 65%;
   margin-left: 8em;
-  margin-top: -4em;
+  margin-top: -4.5em;
 }
 
 #headerBanner{
-  top:7.5%;
-  position:sticky;
+  position:relative;
   object-fit:cover;
   background-image: url('images/banner-head.png');
   background-repeat: no-repeat;
   background-size:contain;
   height: 145px;
   width: 80%;
-  margin: 0 auto;
-  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  top:65px;
+  text-align: center;
+}
+
+#dividerImg{
+  position:absolute;
+  object-fit:cover;
+  left: 0;
+  width:100%;
+}
+
+#menuList{
+  left: 0;
+  margin-left: -40px;
+  margin-top: .5em;
 }
 
 .videoOverlayContent{
@@ -87,11 +109,13 @@ h5{
   left:42%;
 }
 
-/* Style the video: 100% width and height to cover the entire window */
 video {
-  position:absolute;
   object-fit:cover;
-  z-index: -1;
+  position:absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 /* Style the button used to pause/play the video */
@@ -132,10 +156,4 @@ video {
   background-position-x: center;
   background-size:contain;
   height : 300px;
-}
-
-
-#dividerImg{
-  object-fit:cover;
-  width:100%;
 }
