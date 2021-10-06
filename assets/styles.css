@@ -26,11 +26,23 @@ a.nav-link{
 }
 
 h1.title::first-letter{
-  color:#D16B66;
+  color:#AA172F;
 }
 
 h1.title{
+  position: relative;
   font-family: titleFont;
+  text-align:right;
+  text-shadow: 3px 3px black;
+  z-index: 2;
+}
+
+h1.title2{
+  font-family: titleFont;
+  line-height: 25%;
+  text-align:right;
+  text-shadow: 3px 3px black;
+  z-index: 1;
 }
 
 h2{
@@ -45,17 +57,28 @@ h5{
   color:#000000;
 }
 
+#headerTitle{
+  position:relative;
+  background-image: url('images/banner-head-logo.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 412px;
+  width: 60%;
+  margin-left: 8em;
+  margin-top: -4em;
+}
 
-header{
+#headerBanner{
   top:7.5%;
-  position:absolute;
+  position:sticky;
   object-fit:cover;
   background-image: url('images/banner-head.png');
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 10%;
-  width: 100%;
+  background-size:contain;
+  height: 145px;
+  width: 80%;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .videoOverlayContent{
@@ -65,26 +88,18 @@ header{
 }
 
 /* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  width: 960px;
-  height: 480px;
+video {
+  position:absolute;
   object-fit:cover;
+  z-index: -1;
 }
 
 /* Style the button used to pause/play the video */
 #myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
   cursor: pointer;
 }
 
 #myBtn:hover {
-  background: #ddd;
-  color: black;
 }
 
 #bodyBgImg {
@@ -120,13 +135,7 @@ header{
 }
 
 
-
 #dividerImg{
-  display:inline-block;
-  background-image: url('images/divider.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  height: 78px;
-  width: 100%;
+  object-fit:cover;
+  width:100%;
 }
