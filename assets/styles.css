@@ -16,6 +16,47 @@ body{
   src: url('font/EnchantedLand.otf');
 }
 
+.fade-common{
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  opacity: 1 !important;
+  z-index: 3;
+}
+
+.fade-top-sides {
+  background:
+    -webkit-linear-gradient(left,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,0) 7.5%,
+      rgba(0,0,0,0) 92.5%,
+      rgba(0,0,0,1) 100%
+    );
+}
+
+.fade-bottom-sides {
+  background:
+    -webkit-linear-gradient(left,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,.5) 2.5%,
+      rgba(0,0,0,0) 7.5%,
+      rgba(0,0,0,0) 92.5%,
+      rgba(0,0,0,.5) 97.5%,
+      rgba(0,0,0,1) 100%
+    );
+}
+
+.fade-bottom{
+  background:
+  -webkit-linear-gradient(bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0) 7.5%,
+    rgba(0,0,0,0) 92.5%,
+    rgba(0,0,0,1) 100%
+  );
+}
+
 .display-1::first-letter{
   color:#D16B66;
 }
@@ -92,9 +133,10 @@ h5{
 
 #dividerImg{
   position:absolute;
-  object-fit:cover;
+  object-fit:fill;
   left: 0;
   width:100%;
+  height:100%;
 }
 
 #menuList{
@@ -127,13 +169,25 @@ video {
 }
 
 #bodyBgImg {
+  position: absolute;
+  left: 0;
   font-family: bodyFont;
   text-align:justify;
+  width: 100%;
+  height: 100%;
   background-image: url('images/background.png');
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-size:contain;
-  height: 3000px;
+  background-size: cover;
+}
+
+#footer{
+  position:absolute;
+  object-fit:cover;
+  text-align: center;
+  left: 0;
+  width:100%;
+  height:100%;
+
 }
 
 .paperBgImg{
