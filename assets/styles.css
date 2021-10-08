@@ -124,8 +124,6 @@ h5{
   height: 100%;
   width: 100%;
   left: 0;
-  margin-left: auto;
-  margin-right: auto;
   top:65px;
   text-align: center;
 }
@@ -208,8 +206,7 @@ video {
 .flagImg{
   background-repeat: no-repeat;
   background-position-x: center;
-  background-size:contain;
-  height : 187px;
+  background-size: 85% 100%;
   margin-top: -50px !important;
 }
 
