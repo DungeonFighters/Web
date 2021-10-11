@@ -18,6 +18,27 @@ body{
   src: url('font/EnchantedLand.otf');
 }
 
+
+@media screen and (min-width: 990px) {
+  .papersContent{
+    padding: 1.5rem 1.5rem 0 !important;
+  }
+}
+
+@media screen and (max-width: 1399px){
+  #footer{
+    top: -230px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1399px) and (min-width: 990px) {
+  #bodyContainer{
+    height: 3400px !important;
+  }
+}
+
+
 @media screen and (max-width: 1199px) and (min-width: 990px) {
   h1.title, h1.title2 {
     font-size: 4rem;
@@ -47,6 +68,18 @@ body{
   h1.menuText{
     font-size: 1.7rem;
   }
+  h4{
+    font-size: 1.05rem !important;
+  }
+  #papersContainer{
+    height: 600px!important;
+  }
+  #bodyContainer{
+    height: 2550px !important;
+  }
+  .papersContent{
+    padding: 0.5rem !important;
+  }
 }
 
 .fade-common{
@@ -75,16 +108,23 @@ body{
     );
 }
 
-.fade-bottom-sides {
-  left: 0;
+.fade-bottom-left {
+  left: -2px;
   background:
     -webkit-linear-gradient(left,
       rgba(0,0,0,1) 0%,
       rgba(0,0,0,.5) 2.5%,
-      rgba(0,0,0,0) 7.5%,
-      rgba(0,0,0,0) 92.5%,
-      rgba(0,0,0,.5) 97.5%,
-      rgba(0,0,0,1) 100%
+      rgba(0,0,0,0) 7.5%
+    );
+}
+
+.fade-bottom-right {
+  left: 2px;
+  background:
+    -webkit-linear-gradient(right,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,.5) 2.5%,
+      rgba(0,0,0,0) 7.5%
     );
 }
 
