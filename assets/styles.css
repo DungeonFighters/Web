@@ -1,3 +1,5 @@
+
+
 body{
   background-color: black !important;
 }
@@ -14,6 +16,69 @@ body{
 @font-face {
   font-family: subtitleFont;
   src: url('font/EnchantedLand.otf');
+}
+
+@media screen and (max-width: 1200px) and (min-width: 920px) {
+  h1.title, h1.title2 {
+    font-size: 4rem;
+    left: 8px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  h1.title, h1.title2 {
+    font-size: 3rem;
+    left: 20px;
+    top:-10px;
+  }
+}
+
+.fade-common{
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  opacity: 1 !important;
+  z-index: 1;
+}
+
+.fade-top-left {
+  left: -2px;
+  background:
+    -webkit-linear-gradient(left,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,0) 7.5%
+    );
+}
+
+.fade-top-right{
+  right: -2px;
+  background:
+    -webkit-linear-gradient(right,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,0) 7.5%
+    );
+}
+
+.fade-bottom-sides {
+  left: 0;
+  background:
+    -webkit-linear-gradient(left,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,.5) 2.5%,
+      rgba(0,0,0,0) 7.5%,
+      rgba(0,0,0,0) 92.5%,
+      rgba(0,0,0,.5) 97.5%,
+      rgba(0,0,0,1) 100%
+    );
+}
+
+.fade-bottom{
+  left: 0;
+  background:
+  -webkit-linear-gradient(bottom,
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0) 7.5%
+  );
 }
 
 .display-1::first-letter{
@@ -38,6 +103,7 @@ h1.title{
 }
 
 h1.title2{
+  position: relative;
   font-family: titleFont;
   line-height: 25%;
   text-align:right;
@@ -58,7 +124,8 @@ h5{
 }
 
 #header{
-  z-index: 1;
+  z-index: 3;
+  text-align: center;
 }
 
 .trailerInterface{
@@ -77,30 +144,29 @@ h5{
 }
 
 #headerBanner{
-  position:relative;
-  object-fit:cover;
+  position:absolute;
   background-image: url('images/banner-head.png');
   background-repeat: no-repeat;
   background-size:contain;
-  height: 145px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100%;
+  width: 100%;
+  left: 0;
   top:65px;
   text-align: center;
 }
 
 #dividerImg{
   position:absolute;
-  object-fit:cover;
+  object-fit:fill;
   left: 0;
   width:100%;
+  height:100%;
 }
 
 #menuList{
   left: 0;
   margin-left: -40px;
-  margin-top: .5em;
+  margin-top: .75rem;
 }
 
 .videoOverlayContent{
@@ -127,28 +193,48 @@ video {
 }
 
 #bodyBgImg {
+  position: absolute;
+  left: 0;
   font-family: bodyFont;
   text-align:justify;
+  width: 100%;
+  height: 100%;
   background-image: url('images/background.png');
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-size:contain;
-  height: 3000px;
+  background-size: cover;
 }
 
+#footer{
+  position:absolute;
+  object-fit:cover;
+  text-align: center;
+  left: 0;
+  width:100%;
+  height:100%;
+}
+
+#papersContainer{
+  position:absolute;
+  object-fit:cover;
+  width:100%;
+  height:100%;
+}
+
+
 .paperBgImg{
+  position:relative;
   background-image: url('images/paper.png');
   background-repeat: no-repeat;
-  background-position-x: center;
   background-size:contain;
-  height : 500px;
+  text-align: justify;
+  height: 100%;
 }
 
 .flagImg{
   background-repeat: no-repeat;
   background-position-x: center;
-  background-size:contain;
-  height : 150px;
+  background-size: 85% 100%;
+  margin-top: -50px !important;
 }
 
 .imgChars{
