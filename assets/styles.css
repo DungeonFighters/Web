@@ -18,18 +18,34 @@ body{
   src: url('font/EnchantedLand.otf');
 }
 
-@media screen and (max-width: 1200px) and (min-width: 920px) {
+@media screen and (max-width: 1199px) and (min-width: 990px) {
   h1.title, h1.title2 {
     font-size: 4rem;
     left: 8px;
   }
+  #menuList{
+    margin-top: 0.35rem !important;
+  }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 989px) {
   h1.title, h1.title2 {
     font-size: 3rem;
     left: 20px;
     top:-10px;
+  }
+  #headerTitle{
+    margin-left: 5.5em !important;
+    margin-top: -3.2em !important;
+  }
+  #headerBanner{
+    top: 50px !important;
+  }
+  #menuList{
+    margin-top: 0.25rem !important;
+  }
+  h1.menuText{
+    font-size: 1.7rem;
   }
 }
 
@@ -233,7 +249,7 @@ video {
 .flagImg{
   background-repeat: no-repeat;
   background-position-x: center;
-  background-size: 85% 100%;
+  background-size: 100% 100%;
   margin-top: -50px !important;
 }
 
