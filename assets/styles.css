@@ -1,3 +1,5 @@
+
+
 body{
   background-color: black !important;
 }
@@ -16,26 +18,49 @@ body{
   src: url('font/EnchantedLand.otf');
 }
 
+@media screen and (max-width: 1200px) and (min-width: 920px) {
+  h1.title, h1.title2 {
+    font-size: 4rem;
+    left: 8px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  h1.title, h1.title2 {
+    font-size: 3rem;
+    left: 20px;
+    top:-10px;
+  }
+}
+
 .fade-common{
-  left: 0;
   height: 100%;
   width: 100%;
   position:absolute;
   opacity: 1 !important;
-  z-index: 3;
+  z-index: 1;
 }
 
-.fade-top-sides {
+.fade-top-left {
+  left: -2px;
   background:
     -webkit-linear-gradient(left,
       rgba(0,0,0,1) 0%,
-      rgba(0,0,0,0) 7.5%,
-      rgba(0,0,0,0) 92.5%,
-      rgba(0,0,0,1) 100%
+      rgba(0,0,0,0) 7.5%
+    );
+}
+
+.fade-top-right{
+  right: -2px;
+  background:
+    -webkit-linear-gradient(right,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,0) 7.5%
     );
 }
 
 .fade-bottom-sides {
+  left: 0;
   background:
     -webkit-linear-gradient(left,
       rgba(0,0,0,1) 0%,
@@ -48,6 +73,7 @@ body{
 }
 
 .fade-bottom{
+  left: 0;
   background:
   -webkit-linear-gradient(bottom,
     rgba(0,0,0,1) 0%,
@@ -77,6 +103,7 @@ h1.title{
 }
 
 h1.title2{
+  position: relative;
   font-family: titleFont;
   line-height: 25%;
   text-align:right;
@@ -97,7 +124,7 @@ h5{
 }
 
 #header{
-  z-index: 1;
+  z-index: 3;
   text-align: center;
 }
 
