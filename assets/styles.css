@@ -259,7 +259,7 @@ video {
 }
 
 /* Style the button used to pause/play the video */
-#myBtn {
+.myBtn {
   cursor: pointer;
 }
 
