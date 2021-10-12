@@ -242,11 +242,11 @@ video {
 
 .embed-responsive {
     position: absolute;
-    left: -25%;
-    right: -25%;
+    left: -40%;
+    right: -40%;
     top: 50%;
     margin-top: -50%;
-    padding-bottom: 85%;
+    padding-bottom: 101%;
     height: 0;
     overflow: hidden;
 }
