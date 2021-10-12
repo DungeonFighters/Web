@@ -28,9 +28,9 @@
             </div>
             <div class="col-6">
               <ul id="menuList" class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link"><h1 class="menuText">The Game</h1></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><h1 class="menuText">About</h1></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><h1 class="menuText">Contact Us</h1></a></li>
+                <li class="nav-item"><a href="#game" class="nav-link"><h1 class="menuText">The Game</h1></a></li>
+                <li class="nav-item"><a href="#screenshots" class="nav-link"><h1 class="menuText">Screenshots</h1></a></li>
+                <li class="nav-item"><a href="#news" class="nav-link"><h1 class="menuText">News</h1></a></li>
               </ul>
             </div>
           </div>
@@ -49,8 +49,8 @@
       <!-- Modal -->
       <div class="modal fade" id="trailerModal" tabindex="-1" style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <iframe src="https://drive.google.com/file/d/1SHeb20xw1m8jPdAkmNRvLhMCYng3xFt6/preview" width="1280" height="720" allow="autoplay">
+          <div class="modal-content" style="display: flex; align-items:center; justify-content">
+            <iframe src="https://drive.google.com/file/d/1SHeb20xw1m8jPdAkmNRvLhMCYng3xFt6/preview" width="1280" height="720" allow="autoplay" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
             </iframe>
           </div>
         </div>
@@ -67,7 +67,7 @@
         <div class="fade-common fade-bottom"></div>
         <div id="bodyBgImg">
           <div id="papersContainer" class="container mt-5 pt-5" style="position:relative; width:1000px; height:800px">
-            <div class="row paperBgImg">
+            <div id="game" class="row paperBgImg">
               <div class="col mt-5 ms-5 me-5 papersContent" style="">
                 <div class="row" style="">
                   <div class="col" style="">
@@ -120,6 +120,7 @@
                 </div>
               </div>
             </div>
+            <div id="screenshots" class="mb-5"></div>
             <div class="row paperBgImg" style="">
               <div class="col">
                 <div class="row flagImg" style="background-image: url('assets/images/flag-purple.png');">
@@ -155,7 +156,7 @@
         </div>
       </div>
     </div>
-    <div class="container mt-5" style="position:relative; width:700px">
+    <div id="news" class="container mt-5" style="position:relative; width:700px">
       <div id="footer" class="row">
         <div class="col pb-5">
           <div class="row">
